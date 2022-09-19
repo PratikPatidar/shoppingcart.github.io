@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="Stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav id="navbar" class="h-nav">
+            <ul class="visibality-class nav-list">
+                <div class="logo">
+                    <img src="https://www.pngitem.com/pimgs/m/178-1783030_online-shopping-logo-png-transparent-png.png"
+                        alt="logo">
+                </div>
+                <li class="items">Home</li>
+                <li class="items">About</li>
+                <li class="items">Our Service</li>
+                <li class="items">Contact Us</li>
+            </ul>
+            <div class="rightnav visibality-class"></div>
+            <div class="hamburg ">&#9776</div>
+        </nav>
+
+        <section class="box">
+            <div id="box1">
+                <h1> Welcome to the Shopping Hub</h1>
+            </div>
+            <div id="box2">
+                <form action="/action_page.php">
+                    <div class="userdetail">
+                        <input type="text" id="username" placeholder="Username">
+                    </div>
+                    <div class="password">
+                        <input type="password" id="password" placeholder="Your Password">
+                    </div>
+                </form>
+                <div class="forgotpass">
+                    Forgot your password?</a>
+                </div>
+            </div>
+
+            <button id="Submit">Submit</button>
+            <div class="Signup"><span>New to this
+                    site?</span>
+                <button class="btn-signup" type="button">Sign Up</button>
+            </div>
+        </section>
+
+    </div>
+    <script>
+        let username = document.getElementById('username')
+        document.getElementById('Submit').onclick = function () { Submit() };
+        function Submit() {
+            document.querySelector('.container').innerHTML = `
+           <h1>Thank You For login</h1>
+           <button class="yourcart" onclick="Yourcart()">Go To Cart</button>
+                 `;
+        }
+        function Yourcart() {
+            window.location.href = 'cart.html';
+        }
+
+    </script>
+</body>
+
+</html>

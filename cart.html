@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="Stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <nav id="navbar" class="h-nav">
+            <ul class="visibality-class nav-list">
+                <div class="logo">
+                    <img src="https://www.pngitem.com/pimgs/m/178-1783030_online-shopping-logo-png-transparent-png.png"
+                        alt="logo">
+                </div>
+                <li class="items">Home</li>
+                <li class="items">About</li>
+                <li class="items">Our Service</li>
+                <li class="items">Contact Us</li>
+            </ul>
+            <div class="rightnav visibality-class"></div>
+            <div class="hamburg ">&#9776</div>
+        </nav>
+
+        <div class="slide1">
+            <form class="example" action="">
+                <input type="text" placeholder="Search.." id="search" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <div class="cart-value">
+                <div class="item">
+                    <div class="item-image">
+                        <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1639632985.13488695.jpg?width=200&height=200"
+                            alt="">
+                    </div>
+                    <div class="item-content">
+                        <h1 class="item-name">
+                            Redmi 9A Sport Coral Green
+                        </h1>
+                        <p class="Price">
+                            ₹7,999
+                        </p>
+                        <p class="Color">
+                            Color :- Coral Green
+                        </p>
+                        <p class="detail">
+                            In Stock
+                        </p>
+                    </div>
+
+                    <div class="quantity">
+                        <button onclick="decrement1()">-</button><br>
+                        <h2 id="counting1"> 1</h2><br>
+                        <button onclick=" increment1()">+</button>
+                    </div>
+                    <div class="add-btn">
+                        <button onclick="delet1()">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-image">
+                        <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1632992436.181757.jpg?width=200&height=200"
+                            alt="profile">
+                    </div>
+                    <div class="item-content">
+
+                        <h1 class="item-name">
+                            Redmi Note 10 Lite Glacier White
+                        </h1>
+                        <p class="Price">
+                            ₹13,999
+                        </p>
+                        <p class="Color">
+                            Color:- Glacier White
+                        </p>
+                        <p class="detail">
+                            In Stock
+                        </p>
+                    </div>
+
+                    <div class="quantity">
+                        <button onclick="decrement2()">-</button><br>
+                        <h2 id="counting2"> 1</h2><br>
+                        <button onclick="increment2()">+</button>
+                    </div>
+                    <div class="add-btn">
+                        <button onclick="delet2()">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-image">
+                        <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1638353961.48768836.jpg?width=200&height=200"
+                            alt="profile">
+                    </div>
+                    <div class="item-content">
+
+                        <h1 class="item-name">
+                            Redmi Note 10S Cosmic Purple
+                        </h1>
+                        <p class="Price">
+                        <p class="price3"> ₹16,499</p>
+                        </p>
+                        <p class="Color">
+                            Color :- Cosmic Purple
+                        </p>
+                        <p class="detail">
+                            In Stock
+                        </p>
+                    </div>
+
+                    <div class="quantity">
+                        <button onclick="decrement3()">-</button>
+                        <h2 id="counting3"> 1</h2>
+                        <button onclick="increment3()">+</button>
+                    </div>
+                    <div class="add-btn">
+                        <button onclick="delet3()">
+                            Delete
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="subtotals">
+                <h1>Subtotals</h1>
+                <p>&#X20B9</p>
+                <h1 id="subtotal">
+                    00
+                </h1>
+            </div>
+            <div class="checkouts">
+                <button onclick="checkout()">Checkouts</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
